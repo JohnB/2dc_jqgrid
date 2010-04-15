@@ -140,5 +140,7 @@
 })(jQuery);
 
 $(function() {
-  $('div.contextMenu').hide();
+	// JBaylor: fixed to use jQuery() instead of $() - which caused problems when
+	//          prototype.js tried to handle a jquery-style element reference.
+  jQuery('div.contextMenu').hide();
 });
